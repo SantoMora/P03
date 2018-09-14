@@ -8,37 +8,56 @@
 	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/photoswipe.css">
-	<script type="text/javascript" src="jquery.flexslider.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="img/favicon.png">
 	<title>PO3</title>
 </head>
 <body>
 	<header>
+		<!--
 		<nav>
-			<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #CAD3C8">
-			  <a class="navbar-brand" href="#">Navbar</a>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dar" >
+				<a class="navbar-brand" href="index.html#Inicio">
+				    <img src="img/brand.png" width="30" height="30" class="d-inline-block align-top" alt="">
+				 </a>
+			  <a class="navbar-brand" href="index.html#Inicio">Mis Hobbies</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNav">
 			    <ul class="navbar-nav">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="#">Yo <span class="sr-only">(current)</span></a>
+			      <li class="nav-item">
+			        <a class="nav-link" href="index.html#Peliculas">Peliculas <span class="sr-only">(current)</span></a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#">Hobbies</a>
+			        <a class="nav-link" href="index.html#Cocinar">Cocinar</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#">Musica</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link disabled" href="#">Peliculas</a>
+			        <a class="nav-link" href="index.html#Musica">Musica</a>
 			      </li>
 			    </ul>
 			  </div>
 			</nav>
 		</nav>
+	-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dar">
+		<a class="navbar-brand" href="index.html#Inicio">
+		    <img src="img/brand.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		</a>
+		<a class="navbar-brand" href="#">Mis Hobbies</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+			    <a class="nav-item nav-link" href="index.html#Peliculas">Películas <span class="sr-only">(current)</span></a>
+			    <a class="nav-item nav-link" href="index.html#Cocinar">Cocinar</a>
+			    <a class="nav-item nav-link" href="index.html#Musica">Música</a>
+			</div>
+		</div>
+	</nav>
 	</header>
-
+	<a name="Inicio"></a>
 	<section id="slider">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
@@ -68,45 +87,85 @@
 		</div>
 	</section>
 	<div id="Contenedor">
-		<section>
-			<article>
-				<h1>Peliculas</h1>
-				El mas grande hobbie que tengo es el de mirar películas. Ya sea en el cine o en casa, solo o con compañía
-			</article>
-			<div class="row">
-		      <div id="demo-test-gallery" class="demo-gallery">
+		<section class="seccion">
+			<a name="Peliculas"></a>
+			<div class="shadow-lg p-3 mb-5 bg-white rounded card mb-3">
+				<article>
+					<img class="card-img-top" src="img/movies.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h1 class="card-title">Películas</h1>
+					    <p class="card-text">El mas grande hobbie que tengo es el de mirar películas. Ya sea en el cine o en casa, solo o con compañía.</p>
+					</div>
+					<div class="row">
+					    <div id="demo-test-gallery" class="demo-gallery">
 
-		        <a href="img/martian.jpg" data-size="1600x1067" data-med="img/martian.min.png" data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
-		          <img src="img/martian.min.png" alt="" />
-		          <figure>This is dummy caption.</figure>
-		        </a>
+					        <a href="img/martian.jpg" data-size="1600x1067" data-med="img/martian.min.png" data-med-size="1024x1024" data-author="Folkert Gorter" class="demo-gallery__img--main">
+						        <img src="img/martian.min.png" alt="" />
+						        <figure>Smart, thrilling, and surprisingly funny, The Martian offers a faithful adaptation of the bestselling book that brings out the best in leading man Matt Damon and director Ridley Scott</figure>
+					        </a>
 
-		        <a href="img/split.jpg" data-size="1600x1068" data-med="img/split.min.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
-		          <img src="img/split.min.jpg" alt="" />
-		          <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
-		        </a>
-
-
-		        <a href="https://farm4.staticflickr.com/3902/14985871946_24f47d4b53_h.jpg" data-size="1600x1067" data-med="https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_b.jpg" data-med-size="1024x683" data-author="Ales Krivec">
-		          <img src="https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg" alt="" />
-		          <figure>This is dummy caption. It is not meant to be read.</figure>
-		        </a>
+					        <a href="img/split.jpg" data-size="1600x1068" data-med="img/split.min.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+						        <img src="img/split.min.jpg" alt="" />
+						        <figure>Split serves as a dramatic tour de force for James McAvoy in multiple roles -- and finds writer-director M. Night Shyamalan returning resoundingly to thrilling form.</figure>
+					        </a>
 
 
-		        <a href="https://farm6.staticflickr.com/5584/14985868676_b51baa4071_h.jpg" data-size="1600x1067" data-med="https://farm6.staticflickr.com/5584/14985868676_4b802b932a_b.jpg" data-med-size="1024x683" data-author="Michael Hull">
-		          <img src="https://farm6.staticflickr.com/5584/14985868676_4b802b932a_m.jpg" alt="" />
-		          <figure>Dummy caption. It's Greek to you. Unless, of course, you're Greek, in which case, it really makes no sense.</figure>
-		        </a>
-
-		        <a href="https://farm4.staticflickr.com/3920/15008465772_d50c8f0531_h.jpg" data-size="1600x1067" data-med="https://farm4.staticflickr.com/3920/15008465772_383e697089_b.jpg" data-med-size="1024x683" data-author="Thomas Lefebvre">
-		          <img src="https://farm4.staticflickr.com/3920/15008465772_383e697089_m.jpg" alt="" />
-		          <figure>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</figure>
-		        </a>
+					        <a href="img/forrest.jpg" data-size="1600x1067" data-med="img/forrest.min.jpg" data-med-size="1024x683" data-author="Ales Krivec">
+					          <img src="img/forrest.min.jpg" alt="" />
+					          <figure>Forrest Gump may be an overly sentimental film with a somewhat problematic message, but its sweetness and charm are usually enough to approximate true depth and grace.</figure>
+					        </a>
 
 
+					        <a href="img/billboards.jpeg" data-size="1600x1067" data-med="img/billboards.min.jpg" data-med-size="1024x683" data-author="Michael Hull">
+					          <img src="img/billboards.min.jpg" alt="" />
+					          <figure>Three Billboards Outside Ebbing, Missouri deftly balances black comedy against searing drama -- and draws unforgettable performances from its veteran cast along the way.</figure>
+					        </a>
 
-		      </div>
-		      <!-- <figure class="demo-gallery__title">Demo gallery &middot; 5 photos</figure> -->
+					        <a href="img/birdman.jpg" data-size="1600x1067" data-med="img/birdman.min.jpg" data-med-size="1024x683" data-author="Thomas Lefebvre">
+					          <img src="img/birdman.min.jpg" alt="" />
+					          <figure>A thrilling leap forward for director Alejandro González Iñárritu, Birdman is an ambitious technical showcase powered by a layered story and outstanding performances from Michael Keaton and Edward Norton.</figure>
+					        </a>
+					      </div>
+					      <!-- <figure class="demo-gallery__title">Demo gallery &middot; 5 photos</figure> -->
+				</article>
+			</div>
+		</section>
+		<section class="seccion">
+			<a name="Cocinar" class="enlace"></a>
+			<h1>Cocinar</h1>
+			<p class="lead">Una de las cosas que mas me gusta hacer es cocinar, y veo muchos vídeos sobre recetas de comida.</p>
+			<div class="embed-responsive embed-responsive-21by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vOjwjOi5NGM" allowfullscreen></iframe>
+			</div>
+		</section>
+
+		<section class="seccion">
+			<a name="Musica" class="enlace"></a>
+			<h1><i class="fas fa-music"></i>  Música  <i class="fas fa-music"></i></h1>
+			<p class="lead">Una de mis canciones favoritas en el momento</p>
+
+			<div class="shadow-lg p-3 mb-5 bg-white rounded musica">
+				<div class="card" style="width: 20rem;">
+				  <img class="card-img-top" src="img/juanes.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Mis planes son amarte</h5>
+				    <p class="card-text"><i class="fab fa-angellist"></i>Juanes: Actitud</p><br>
+					<audio src="audio/actitud.mp3" preload="auto" controls></audio>
+				    <a href="https://www.youtube.com/watch?v=jW1zhAAbz3M" class="btn btn-primary" target="_blanck">Video</a>
+				  </div>
+				</div>
+			</div>
+			<div  class="shadow-lg p-3 mb-5 bg-white rounded musica">
+				<div class="card" style="width: 20rem;">
+				  <img class="card-img-top" src="img/cafe_tacvba.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Jei Beibi</h5>
+				    <p class="card-text"><i class="far fa-heart"></i>Cafe Tacvba: Que No</p>
+					<audio src="audio/que_no.mp3" preload="auto" controls></audio>
+				    <a href="https://www.youtube.com/watch?v=FVmsNjXCH_Q" class="btn btn-primary" target="_blanck">Video</a>
+				  </div>
+				</div>
+			</div>
 		</section>
 	</div>
 	
@@ -178,5 +237,10 @@
 	<script type="text/javascript" src="js/photo.js"></script>
 	<script type="text/javascript" src="js/photoswipe.min.js"></script>
 	<script type="text/javascript" src="js/photoswipe-ui-default.min.js"></script>
+	<footer>
+		<p class="lead">Mauricio Santiago Valdovinos Morales</p>      
+		<p class="lead">Matriula: 347991</p>         
+		<p class="lead">13/09/2018</p>
+	</footer>
 </body>
 </html>

@@ -11,31 +11,23 @@ body{
 	font-family: helvetica;
 	text-align: center;
 }
+header{
+	background-color: #222f3e;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+}
 footer{
-	background-color: #3C3C3C;
+	background-color: #222f3e;
 	color: #fff;
-	height: 80px;
+	height: 50px;
 	width: 100%;
 }
 footer p{
-	margin: auto;
-}
-header{
-	background-color: #CAD3C8;
-	/*height: 70px;
-	position: fixed;
-	width: 100%;
-	-webkit-transition: background-color 0.5s;
-	z-index: 100;*/
-}
-nav{
-	color: #fff;
-	display: inline-block;
-	height: 60%;
-	width: 80%;
-}
-nav a{
 	color: white;
+	display: inline-block;
+	padding: 10px 35px;
+	margin: auto;
 }
 
 #carouselExampleIndicators img{
@@ -157,38 +149,11 @@ nav a{
 	font-size: 32px;
 	padding: 1em 0;
 }
-.Rclaro{
-	background-color: #ecf0f1;
+.seccion{
+	padding: 3pt;
 }
-.Rclaro aside{
+
+.musica {
 	display: inline-block;
-	float: left;
-	height: 100%;
-	width: 30%;
-}
-.Rclaro article{
-	display: inline-block;
-	width: 70%;
-}
-.Rfuerte{
-	background-color: #bdc3c7;
-}
-.Rfuerte aside{
-	display: inline-block;
-	float: right;
-	height: 100%;
-	width: 30%;
-}
-.pestanas {
-	display: inline-block;
-	padding: 15px;
-}
-.pestanas:hover{
-	border-bottom: 5px solid #2980b9;
-	background-color: #7A7A7A;
-}
-.poster{
-	height: 90%;
-	margin-top: 5%;
-	width: 80%;
+	padding: 30px;
 }
